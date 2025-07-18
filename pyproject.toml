@@ -7,5 +7,6 @@ dependencies = [
     "langgraph>=0.5.3",
     "langgraph-cli[inmem]>=0.3.5",
     "pandas>=2.3.1",
+    "pydantic>=2.11.7",
     "pytest>=8.4.1",
 ]

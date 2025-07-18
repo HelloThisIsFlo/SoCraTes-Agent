@@ -1370,6 +1370,7 @@ dependencies = [
     { name = "langgraph" },
     { name = "langgraph-cli", extra = ["inmem"] },
     { name = "pandas" },
+    { name = "pydantic" },
     { name = "pytest" },
 ]
 
@@ -1379,6 +1380,7 @@ requires-dist = [
     { name = "langgraph", specifier = ">=0.5.3" },
     { name = "langgraph-cli", extras = ["inmem"], specifier = ">=0.3.5" },
     { name = "pandas", specifier = ">=2.3.1" },
+    { name = "pydantic", specifier = ">=2.11.7" },
     { name = "pytest", specifier = ">=8.4.1" },
 ]
 
