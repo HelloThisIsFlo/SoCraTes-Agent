@@ -1,2 +1,3 @@
 # SoCraTes-Agent
-Helps you decide which session to attend next
+
+Let's build an agent together!
