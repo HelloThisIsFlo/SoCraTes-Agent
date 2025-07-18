@@ -6,4 +6,5 @@ dependencies = [
     "langchain[google-genai,openai]>=0.3.26",
     "langgraph>=0.5.3",
     "langgraph-cli[inmem]>=0.3.5",
+    "pandas>=2.3.1",
 ]
