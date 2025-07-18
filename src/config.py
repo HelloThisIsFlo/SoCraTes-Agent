@@ -14,9 +14,10 @@ def get_large_model():
     # return ChatGoogleGenerativeAI(model="gemini-2.0-flash") # Doesn't work
 
     # return ChatOpenAI(model="qwen3-14b-mlx", base_url="http://localhost:1234/v1")
-    # return ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+    return ChatGoogleGenerativeAI(model="gemini-2.5-flash")
     # return ChatOpenAI(model="gpt-4.1-mini")
     # return ChatOpenAI(model="o4-mini")
     # return ChatOpenAI(model="gpt-4.1")
+    # return ChatOpenAI(model="gpt-4o")
     # return ChatOpenAI(model="gpt-4o")
     return ChatOpenAI(model="gpt-4o-mini")

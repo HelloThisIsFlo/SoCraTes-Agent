@@ -4,7 +4,8 @@
   ],
   "graphs": {
     "S: Graph": "./src/sandbox/sandbox_graph.py:graph",
-    "S: Agent": "./src/sandbox/sandbox_agent.py:agent"
+    "S: Agent": "./src/sandbox/sandbox_agent.py:agent",
+    "Socrates Buddy": "./src/agent.py:socrates_buddy"
   },
   "env": ".env"
 }
