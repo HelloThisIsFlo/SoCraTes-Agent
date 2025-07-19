@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  socrates-agent:
+  socrates-buddy:
     build: .
     ports:
       - "7860:7860"
