@@ -105,7 +105,7 @@ def save_schedule(schedule: list[Session]) -> str:
 
 socrates_buddy = create_react_agent(
     model=get_large_model(),
-    tools=[get_up_to_date_schedule, save_schedule],
+    tools=[get_up_to_date_schedule],
     prompt=SOCRATES_BUDDY_PROMPT,
 )
 

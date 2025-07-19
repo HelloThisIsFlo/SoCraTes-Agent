@@ -25,7 +25,12 @@ def predict(message, history):
     return output["messages"][-1].content
 
 
-demo = gr.ChatInterface(predict, type="messages")
+demo = gr.ChatInterface(
+    predict,
+    type="messages",
+    title="SoCraTes Buddy",
+    description="Craft your ideal SoCraTes schedule for the day!",
+)
 
 if __name__ == "__main__":
     demo.launch(
