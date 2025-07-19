@@ -38,4 +38,4 @@ EXPOSE 7860
 ENV GRADIO_SERVER_NAME=0.0.0.0
 
 # Run the UI application
-CMD ["uv", "run", "src/ui.py"] 
+CMD ["uv", "run", "python", "-m", "src.ui"] 
