@@ -7,19 +7,13 @@ WORKDIR /app
 # Install uv for dependency management
 RUN pip install uv
 
-# Accept build arguments for environment variables
-ARG GOOGLE_GENAI_USE_VERTEXAI
-ARG GOOGLE_API_KEY
-ARG LANGSMITH_TRACING
-ARG LANGSMITH_API_KEY
-ARG LANGCHAIN_ENDPOINT
+# Set non-sensitive environment variables
+ENV GOOGLE_GENAI_USE_VERTEXAI=False
+ENV LANGSMITH_TRACING=true
+ENV LANGCHAIN_ENDPOINT=https://eu.api.smith.langchain.com/
 
-# Set environment variables
-ENV GOOGLE_GENAI_USE_VERTEXAI=${GOOGLE_GENAI_USE_VERTEXAI}
-ENV GOOGLE_API_KEY=${GOOGLE_API_KEY}
-ENV LANGSMITH_TRACING=${LANGSMITH_TRACING}
-ENV LANGSMITH_API_KEY=${LANGSMITH_API_KEY}
-ENV LANGCHAIN_ENDPOINT=${LANGCHAIN_ENDPOINT}
+# Note: Sensitive API keys (GOOGLE_API_KEY, LANGSMITH_API_KEY) should be passed at runtime
+# using docker run -e or docker-compose environment settings for security
 
 # Copy dependency files
 COPY pyproject.toml uv.lock ./

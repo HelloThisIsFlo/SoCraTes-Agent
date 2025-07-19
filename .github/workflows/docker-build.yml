@@ -45,9 +45,3 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          build-args: |
-            GOOGLE_GENAI_USE_VERTEXAI=${{ secrets.GOOGLE_GENAI_USE_VERTEXAI }}
-            GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}
-            LANGSMITH_TRACING=${{ secrets.LANGSMITH_TRACING }}
-            LANGSMITH_API_KEY=${{ secrets.LANGSMITH_API_KEY }}
-            LANGCHAIN_ENDPOINT=${{ secrets.LANGCHAIN_ENDPOINT }}
